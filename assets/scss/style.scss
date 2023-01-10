@@ -1,5 +1,6 @@
 //Fuente de google fonts
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;900&display=swap');
+
 
 //Definir variable de fuente principal en bootstrap
 $font-family-base: 'Inconsolata', monospace;
@@ -34,9 +35,14 @@ $theme-colors: (
 .card{
     border-radius: 40px;
     padding: 1%;
+
+    .card-title{
+      font-weight: 900;
+    }
 }
 
 .btn{
     @extend .card;
     background-color: $warning;
+    border-color: $warning;
 }

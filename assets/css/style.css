@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"); /*!
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;900&display=swap"); /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
@@ -10864,9 +10864,13 @@ textarea.form-control-lg {
   border-radius: 40px;
   padding: 1%;
 }
+.card .card-title, .btn .card-title {
+  font-weight: 900;
+}
 
 .btn {
   background-color: rgb(255, 208, 0);
+  border-color: rgb(255, 208, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
