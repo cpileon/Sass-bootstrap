@@ -1,0 +1,42 @@
+//Fuente de google fonts
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+//Definir variable de fuente principal en bootstrap
+$font-family-base: 'Inconsolata', monospace;
+
+//Cambiar colores
+$primary: rgb(160, 0, 67);
+$secondary: rgb(214, 91, 42);
+$success: rgb(29, 204, 204);
+$info: rgb(0, 255, 42);
+$warning: rgb(255, 208, 0);
+$danger: rgb(128, 0, 0);
+$light: lightgrey;
+$dark: black;
+
+//Theme colors
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "bavarois": rgb(230, 184, 191),
+);
+
+//Importar bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Clases 
+.card{
+    border-radius: 40px;
+    padding: 1%;
+}
+
+.btn{
+    @extend .card;
+    background-color: $warning;
+}
